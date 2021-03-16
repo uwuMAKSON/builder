@@ -1,7 +1,10 @@
+import Layuot from "./components/Layout/Layout"
 function App() {
   return (
     <div className="App">
-     Maksim
+     <Layuot>
+       Maksim
+     </Layuot>
     </div>
   );
 }
