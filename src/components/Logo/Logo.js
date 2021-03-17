@@ -1,9 +1,11 @@
 import classes from "./Logo.module.css";
+import logo from "../images/bonsai.svg"
 
 const Logo = () => {
     return (
         <div className={classes.Logo}>
-            Logo
+            <img src={logo}/>
+            <span>SEEDLINGS</span>
         </div>
       );
 }

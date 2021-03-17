@@ -3,7 +3,7 @@ function App() {
   return (
     <div className="App">
      <Layuot>
-       Maksim
+      SEEDLINGS   
      </Layuot>
     </div>
   );
