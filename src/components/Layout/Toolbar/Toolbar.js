@@ -1,16 +1,16 @@
-import classes from "./Toolbar.module.css";
 import Logo from "../../Logo/Logo";
 import Nav from "../../Nav/Nav";
-import DrawerToggle from "../Drawer/DrawerToggle/DrawerToggle";
+import DrawerOpen from "../Drawer/DrawerOpen/DrawerOpen";
+import classes from "./Toolbar.module.css";
 
-const Toolbar = () => {
-    return (
-        <div className={classes.Toolbar}>        
-        <Logo/>
-        <Nav/> 
-        <DrawerToggle />
-        </div>
-      );
+const Toolbar = ({ openDrawer }) => {
+  return (
+    <div className={classes.Toolbar}>
+      <Logo />
+      <Nav />
+      <DrawerOpen click={openDrawer} />
+    </div>
+  );
 }
  
 export default Toolbar;
