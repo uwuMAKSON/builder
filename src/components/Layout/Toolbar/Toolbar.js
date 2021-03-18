@@ -4,10 +4,9 @@ import Nav from "../../Nav/Nav";
 
 const Toolbar = () => {
     return (
-        <div className={classes.Toolbar}>
+        <div className={classes.Toolbar}>        
         <Logo/>
-        <Nav/>
-        
+        <Nav/>  
         </div>
       );
 }
