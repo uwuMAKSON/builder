@@ -1,12 +1,12 @@
-import classes from "./Drawer.module.css";
+import classes from "./DrawerToggle.module.css";
 
 
-const Drawer = () => {
+const DrawerToggle = () => {
     return (
-        <div className={classes.DrawerToggle}>
+        <div className={classes.DrawerToggle}>Toggle
        
     </div>
       );
 }
  
-export default Drawer;
+export default DrawerToggle;
