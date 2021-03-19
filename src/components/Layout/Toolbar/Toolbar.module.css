@@ -1,6 +1,7 @@
 .Toolbar {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
     
     color: white;
     background-color: rgb(6, 228, 6);
