@@ -1,5 +1,5 @@
 import Layuot from "./components/Layout/Layout";
-import SeedlingBuilder from "./components/SeedlingBuilder/SeedlingBuilder";
+import SeedlingBuilder from "./components/Layout/SeedlingBuilder/SeedlingBuilder";
 import "./App.css"
 function App() {
   return (

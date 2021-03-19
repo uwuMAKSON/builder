@@ -1,4 +1,4 @@
-import classes from "./SeedlingControls.module.css";
+import classes from "./SeedlingConrols.module.css";
 
 const SeedlingControls = () => {
   return (
