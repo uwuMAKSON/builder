@@ -1,7 +1,18 @@
 .SeedlingPreview {
-    flex: 0 0 400px;
-    height: 400px;
-    margin-right: 1rem;
-    border-radius: 100%;
-    background-color: wheat;
-  }
+  flex: 0 0 400px;
+  height: 400px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 20%;
+  background-color: rgb(10, 155, 10);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seedling {
+  width: 350px;
+  height: 350px;
+  border-radius: 20%;
+  background-color: rgb(19, 197, 19);
+}

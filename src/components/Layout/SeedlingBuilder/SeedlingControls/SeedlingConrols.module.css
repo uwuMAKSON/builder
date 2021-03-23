@@ -1,7 +1,10 @@
 .SeedlingControls {
-    flex: 0 0 250px;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: tomato;
-    color: white;
-  }
+  flex: 0 0 300px;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: rgb(19, 177, 19);
+  color: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
