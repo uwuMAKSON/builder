@@ -3,16 +3,16 @@
   height: 400px;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  border-radius: 20%;
-  background-color: rgb(10, 155, 10);
+  border-radius: 100%;
+  background-color: #fcc067;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.fruit {
-  width: 350px;
-  height: 350px;
-  border-radius: 20%;
-  background-color: rgb(19, 197, 19);
+.ingredients {
+  width: 380px;
+  height: 380px;
+  border-radius: 100%;
+  position: relative;
 }

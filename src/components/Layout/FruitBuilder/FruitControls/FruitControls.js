@@ -1,10 +1,8 @@
-import classes from "./FruitConrols.module.css";
+import classes from "./FruitControls.module.css";
 
 const FruitControls = () => {
   return (
-    <div className={classes.FruitControls}>
-
-        </div>
+    <div className={classes.FruitControls}>Controls</div>
   );
 }
 

@@ -1,17 +1,10 @@
-import classes from "./FruitgBuilder.module.css";
-import FruitgPreview from "./FruitPreview/FruitPreview";
-import FruitgControls from "./FruitControls/FruitControls";
-
+import classes from "./FruitBuilder.module.css";
+import FruitPreview from "./FruitPreview/FruitPreview";
+import FruitControls from "./FruitControls/FruitControls";
 
 const FruitBuilder = () => {
   const ingredients = {
-    Apple: 10,
-    Pear: 10,
-    Peach: 10,
-    Apricot: 10,
-    Plum: 10,
-    Cherry: 10,
-    Berries: 10,
+    pear: 20,
   };
 
   return (
@@ -21,6 +14,5 @@ const FruitBuilder = () => {
     </div>
   );
 }
-
 
 export default FruitBuilder;
