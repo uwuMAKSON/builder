@@ -4,7 +4,12 @@ import FruitControls from "./FruitControls/FruitControls";
 
 const FruitBuilder = () => {
   const ingredients = {
-    pear: 20,
+    pear: 80,
+    pear: 80,
+    pear: 80,
+    pear: 80,
+    pear: 80,
+    pear: 80,
   };
 
   return (

@@ -1,6 +1,6 @@
 import classes from "./FruitIngredient.module.css";
 
-import pearBackground from "../../../images/pear.svg";
+import pearBackground from "../../../../images/pear.svg";
 
 
 const FruitIngredient = ({ type }) => {

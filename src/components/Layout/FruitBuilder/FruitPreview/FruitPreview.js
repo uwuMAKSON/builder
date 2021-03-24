@@ -1,4 +1,4 @@
-import FruitPreview from "../FruitPreview/FruitPreview";
+import FruitIngredient from "../FruitIngredient/FruitIngredient";
 import classes from "./FruitPreview.module.css";
 import ingredientsBackground from "../../../../images/pear.svg";
 
@@ -14,7 +14,7 @@ const FruitPreview = ({ ingredients }) => {
     <div className={classes.FruitPreview}>
       <div
         className={classes.ingredients}
-        style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+       >
         {result}
       </div>
     </div>
