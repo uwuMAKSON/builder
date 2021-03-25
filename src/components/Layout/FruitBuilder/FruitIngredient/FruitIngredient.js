@@ -1,14 +1,15 @@
 import classes from "./FruitIngredient.module.css";
-
-import pearBackground from "../../../../images/pear.svg";
 import appleBackground from "../../../../images/apple.svg";
+import pearBackground from "../../../../images/pear.svg";
 import bananaBackground from "../../../../images/banana.svg";
 
-const FruitIngredient = ({ type }) => {
+
+const FruitIngredient = ({ type, fixed }) => {
   const types = {
-    pear: { backgroundImage: `url(${pearBackground})`, width: "35px", height: "35px" },
     apple: { backgroundImage: `url(${appleBackground})`, width: "35px", height: "35px" },
-    banana: { backgroundImage: `url(${bananaBackground})`, width: "35px", height: "35px" },
+    pear: { backgroundImage: `url(${pearBackground})`, width: "35px", height: "35px" },
+    banana: { backgroundImage: `url(${bananaBackground})`, width: "10px", height: "10px" },
+   
   };
 
   function getPosition(ingredientWidth) {
@@ -32,9 +33,11 @@ const FruitIngredient = ({ type }) => {
   }
 
   // Get random position for this ingredient.
-  const position = getPosition(types[type].width);
-  types[type].top = position.top + "px";
-  types[type].left = position.left + "px";
+  if (!fixed) {
+    const position = getPosition(types[type].width);
+    types[type].top = position.top + "px";
+    types[type].left = position.left + "px";
+  }
   // Get random rotation for this ingredient.
   types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
@@ -42,4 +45,5 @@ const FruitIngredient = ({ type }) => {
     <div className={classes.FruitIngredient} style={types[type]}></div>
   );
 }
+
 export default FruitIngredient;
