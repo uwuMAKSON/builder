@@ -1,8 +1,9 @@
 import Layout from "./components/Layout/Layout";
 import FruitBuilder from "./components/Layout/FruitBuilder/FruitBuilder";
+
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Layout>

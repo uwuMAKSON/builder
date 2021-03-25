@@ -1,12 +1,14 @@
 import classes from "./FruitIngredient.module.css";
 
 import pearBackground from "../../../../images/pear.svg";
-
+import appleBackground from "../../../../images/apple.svg";
+import bananaBackground from "../../../../images/banana.svg";
 
 const FruitIngredient = ({ type }) => {
   const types = {
     pear: { backgroundImage: `url(${pearBackground})`, width: "35px", height: "35px" },
- 
+    apple: { backgroundImage: `url(${appleBackground})`, width: "35px", height: "35px" },
+    banana: { backgroundImage: `url(${bananaBackground})`, width: "35px", height: "35px" },
   };
 
   function getPosition(ingredientWidth) {

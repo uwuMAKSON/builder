@@ -1,12 +1,13 @@
 import Logo from "../../Logo/Logo";
 import Nav from "../../Nav/Nav";
 import Backdrop from "../../UI/Backdrop/Backdrop";
+
 import classes from "./Drawer.module.css";
 
 const Drawer = ({ open, closeDrawer }) => {
   const drawerClasses = [
     classes.content,
-    open ? classes.open : classes.closed
+    open ? classes.open : classes.close
   ];
 
   return (
@@ -19,5 +20,5 @@ const Drawer = ({ open, closeDrawer }) => {
     </div>
   );
 }
- 
+
 export default Drawer;
