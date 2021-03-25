@@ -18,5 +18,6 @@
 @media (min-width: 550px) {
   .Drawer {
     display: none;
+    
   }
 }
