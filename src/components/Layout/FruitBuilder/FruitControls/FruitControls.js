@@ -1,6 +1,6 @@
 import classes from "./FruitControls.module.css";
 
-const FruitControls = () => {
+const FruitControls = ({ ingredients }) => {
   return (
     <div className={classes.FruitControls}>Controls</div>
   );
