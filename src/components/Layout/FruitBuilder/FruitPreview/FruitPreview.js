@@ -1,7 +1,7 @@
 import FruitIngredient from "../FruitIngredient/FruitIngredient";
 
 import classes from "./FruitPreview.module.css";
-import ingredientsBackground from "../../../../images/bonsai.svg";
+import ingredientsBackground from "../../../../images/karzina.jpg";
 
 const FruitPreview = ({ ingredients }) => {
   const result = [];

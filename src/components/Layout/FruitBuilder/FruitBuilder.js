@@ -1,4 +1,4 @@
-import FruitPreview from "./FruitPreview/FruitPreview";
+import FruitPreview from ".//FruitPreview/FruitPreview";
 import FruitControls from "./FruitControls/FruitControls";
 
 import classes from "./FruitBuilder.module.css";
@@ -6,10 +6,11 @@ import { useState } from "react";
 
 const FruitBuilder = () => {
   const [ingredients, setIngredients] = useState({
-    apple: 1,
-    pear: 1,
-    banana: 1,
-   
+    apple: 10,
+    pear: 10,
+    banana: 10,
+    watermelon: 10,
+    grapes: 10,
   });
 
   function addIngredient(type) {

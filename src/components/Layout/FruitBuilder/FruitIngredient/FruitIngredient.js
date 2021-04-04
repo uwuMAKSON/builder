@@ -1,15 +1,21 @@
+import React from "react";
+
 import classes from "./FruitIngredient.module.css";
 import appleBackground from "../../../../images/apple.svg";
 import pearBackground from "../../../../images/pear.svg";
 import bananaBackground from "../../../../images/banana.svg";
+import watermelonBackground from "../../../../images/watermelon.svg";
+import grapesBackground from "../../../../images/grapes.svg";
+
 
 
 const FruitIngredient = ({ type, fixed }) => {
   const types = {
     apple: { backgroundImage: `url(${appleBackground})`, width: "35px", height: "35px" },
     pear: { backgroundImage: `url(${pearBackground})`, width: "35px", height: "35px" },
-    banana: { backgroundImage: `url(${bananaBackground})`, width: "10px", height: "10px" },
-   
+    banana: { backgroundImage: `url(${bananaBackground})`, width: "50px", height: "50px" },
+    watermelon: { backgroundImage: `url(${watermelonBackground})`, width: "40px", height: "40px" },
+    grapes: { backgroundImage: `url(${grapesBackground})`, width: "40px", height: "40px" },
   };
 
   function getPosition(ingredientWidth) {
@@ -46,4 +52,4 @@ const FruitIngredient = ({ type, fixed }) => {
   );
 }
 
-export default FruitIngredient;
+export default React.memo(FruitIngredient);
