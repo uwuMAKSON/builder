@@ -3,7 +3,7 @@ import FruitIngredient from "../FruitIngredient/FruitIngredient";
 import classes from "./FruitPreview.module.css";
 import ingredientsBackground from "../../../../images/karzina.jpg";
 
-const FruitPreview = ({ ingredients }) => {
+const FruitPreview = ({ ingredients, price }) => {
   const result = [];
   for (const ingredient in ingredients) {
     for (let i = 0; i < ingredients[ingredient]; i++) {
@@ -13,11 +13,14 @@ const FruitPreview = ({ ingredients }) => {
 
   return (
     <div className={classes.FruitPreview}>
-      <div
-        className={classes.ingredients}
-        style={{ backgroundImage: `url(${ingredientsBackground})` }}>
-        {result}
+      <div className={classes.Fruit}>
+        <div
+          className={classes.ingredients}
+          style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+          {result}
+        </div>
       </div>
+      <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>
   );
 }
