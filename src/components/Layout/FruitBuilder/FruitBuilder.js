@@ -6,24 +6,35 @@ import { useState } from "react";
 
 const FruitBuilder = () => {
   const prices = {
-    apple: 15,
-    banana: 20,
-    pear: 10,
-    watermelon: 200,
-    grapes: 100,
+    watermelon: 300,
+    apple: 5,
+    pear: 5,
+    banana: 30,
+    grapes: 80,
+   
   };
+
   const [ingredients, setIngredients] = useState({
-    apple: 1,
-    banana: 1,
-    pear: 1,
     watermelon: 1,
+    apple: 1,
+    pear: 1,
+    banana: 1,
     grapes: 1,
+  
   });
   const [price, setPrice] = useState(150);
+  const [canBuy, setCanBuy] = useState(true);
+
+  function checkCanBuy(newIngredients) {
+    const totalIngredients = Object.values(newIngredients)
+      .reduce((total, current) => total + current);
+    setCanBuy(totalIngredients > 0);
+  }
 
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
     newIngredients[type]++;
+    checkCanBuy(newIngredients);
     setPrice(price + prices[type]);
     setIngredients(newIngredients);
   }
@@ -32,6 +43,7 @@ const FruitBuilder = () => {
     if (ingredients[type]) {
       const newIngredients = { ...ingredients };
       newIngredients[type]--;
+      checkCanBuy(newIngredients);
       setPrice(price - prices[type]);
       setIngredients(newIngredients);
     }
@@ -43,6 +55,7 @@ const FruitBuilder = () => {
         ingredients={ingredients}
         price={price} />
       <FruitControls
+        canBuy={canBuy}
         ingredients={ingredients}
         addIngredient={addIngredient}
         removeIngredient={removeIngredient}

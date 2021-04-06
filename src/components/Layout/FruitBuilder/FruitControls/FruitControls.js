@@ -15,6 +15,7 @@ const FruitControls = ({ ingredients, addIngredient, removeIngredient }) => {
     <div className={classes.FruitControls}>
       <strong>Ingredients</strong>
       {results}
+      <button>Order</button>
     </div>
   );
 }

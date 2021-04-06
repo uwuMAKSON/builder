@@ -14,3 +14,4 @@ const FruitControl = ({ type, add, remove }) => {
 }
 
 export default FruitControl;
+
