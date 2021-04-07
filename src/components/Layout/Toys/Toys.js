@@ -1,7 +1,7 @@
 import ToysPreview from "./ToysPreview/ToysPreview";
 import ToysControls from "./ToysControls/ToysControls";
 import OrderSummary from "./OrderSummary/OrderSummary";
-import Modal from "../UI/Modal/Modal";
+import Modal from "../../UI/Backdrop/Modal/Modal";
 import classes from "./Toys.module.css";
 import { useState } from "react";
 

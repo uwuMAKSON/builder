@@ -15,7 +15,7 @@ const Drawer = ({ open, closeDrawer }) => {
       <div className={drawerClasses.join(" ")}>
         <Logo />
         <Nav />
-       <a href="https://codepen.io/pen/tour/welcome/start">Animal Order</a>
+       <a href="https://codepen.io/pen/tour/welcome/start">Toys Order</a>
       </div>
     </div>
   );
