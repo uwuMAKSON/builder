@@ -1,6 +1,5 @@
 import Layout from "./components/Layout/Layout" ;
 import Toys from "./components/Layout/Toys/Toys" ;
-
 import "./App.css" ;
 const App =() =>{
   return (

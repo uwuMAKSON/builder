@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
-    color: black;
-    
+    font-size: 28px;
+    color: blue;
+    font-weight: bold;
 }
 .Logo img{
     border-radius: 25px;
-    width: 130px;
-    height: 60px;
-    margin-right: .5rem;
+    width:70px;
+    height: 70px;
+    margin-right: .1rem;   
 }

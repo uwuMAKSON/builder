@@ -1,8 +1,7 @@
 body{
-    font-family: 'Dancing Script', cursive;
+    font-family: cursive;
+    color: rgb(189, 189, 214);
     margin: 0;
-   background-color: #7ffcd8;
-   width: 100%;height: 100%;
    background-size: cover;
-
+   background-image: url(./images/back.jpg);
 }

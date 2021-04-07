@@ -1,4 +1,4 @@
-import ToysAll from "../ToysAll/ToysAll";
+import ToysAll from "../ToysIngredient/ToysIngredient";
 import classes from "./ToysPreview.module.css";
 
 
