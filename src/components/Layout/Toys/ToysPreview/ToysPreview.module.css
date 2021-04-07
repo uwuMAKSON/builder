@@ -1,0 +1,34 @@
+.ToysPreview {
+  flex: 0 0 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color{
+  border: 0.1px solid black;
+  border-radius: 30px  ;
+  padding: 10px;
+  width: 410px;
+ min-height: 430px;
+  background-color: #dac384;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+    margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+ background-color: #dac384;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+a:focus {
+  outline: none;
+}

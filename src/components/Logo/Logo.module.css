@@ -1,8 +1,14 @@
 .Logo{
     display: flex;
     align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: black;
+    
 }
-.Logo img {
-    height: 50px;
+.Logo img{
+    border-radius: 25px;
+    width: 130px;
+    height: 60px;
     margin-right: .5rem;
 }

@@ -1,13 +1,15 @@
-.Toolbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    
-    color: red;
-    font-size: 30px;
-    background-color: rgb(241, 232, 232);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    position: sticky;
-    top: 0;
-    left: 0;
-  }
+.Toolbar{
+  display: flex;
+  justify-content: space-between;
+
+  background-color:#dac384;
+
+  font-size: 20px;
+  color: white;
+  font-family: 'Redressed', cursive; 
+  padding: 15px;
+  position: sticky;
+  top:0;
+  left:0;
+  box-shadow: 0 0  10px rgba(0, 0, 0, 0.342);
+}

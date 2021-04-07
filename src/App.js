@@ -1,14 +1,14 @@
-import Layout from "./components/Layout/Layout";
-import FruitBuilder from "./components/Layout/FruitBuilder/FruitBuilder";
+import Layout from "./components/Layout/Layout" ;
+import Toys from "./components/Toys/Toys" ;
 
-import "./App.css";
-
-const App = () => {
+import "./App.css" ;
+const App =() =>{
   return (
     <div className="App">
       <Layout>
-        <FruitBuilder />
-      </Layout>
+    <Toys/>
+
+    </Layout>
     </div>
   );
 }
