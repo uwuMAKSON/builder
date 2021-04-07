@@ -10,16 +10,16 @@ const Toys = () => {
     watermelon: 80,
     pear: 70,
     apple:60,
-    banana:40,
   grapes:20,
+  bear:200,
  
   };
   const [ingredients, setIngredients] = useState({
     watermelon: 0,
     pear: 0,
     apple: 0,
-    banana:0,
     grapes:0,
+    bear:0,
 
   });
 
