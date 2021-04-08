@@ -1,9 +1,9 @@
 .Logo{
     display: flex;
     align-items: center;
-    font-family: 'Quicksand', sans-serif;
+text-shadow: 0 0 1rem blue;
     font-size: 28px;
-    color: blue;
+    color: white;
     font-weight: bold;
 }
 .Logo img{
