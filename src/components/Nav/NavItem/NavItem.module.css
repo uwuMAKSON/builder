@@ -1,0 +1,7 @@
+.NavItem a {
+    display: block;
+    color: white;
+    text-shadow: 0 0 1rem blue;
+    text-decoration: none;
+        
+}
