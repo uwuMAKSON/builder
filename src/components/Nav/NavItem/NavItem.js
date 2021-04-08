@@ -1,4 +1,4 @@
-import classes from "*.module.css";
+import classes from "./NavItem.module.css";
 
 const NacItem = ({ children, url, active }) => {
     return ( 
