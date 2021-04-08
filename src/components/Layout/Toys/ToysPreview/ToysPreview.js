@@ -14,7 +14,8 @@ const ToysPreview = ({ ingredients,price }) => {
     <div className={classes.ToysPreview}>
       <div
         className={classes.color}>
-        {result}
+          <div className={classes.name}>{result}</div>
+        
       </div>
       {/* <div className={classes.price}>{price} som</div> */}
       <div className={classes.price}>{price.toFixed(1)} som</div>
