@@ -1,7 +1,24 @@
 .NavItem a {
     display: block;
     color: white;
-    text-shadow: 0 0 1rem blue;
     text-decoration: none;
-        
-}
+    padding: 1.6rem 2rem 1rem;
+    border-bottom: 10px solid transparent;
+    transition: all .2s ease-in;
+    text-shadow: 0 0 1rem blue;
+  }
+  .NavItem a:hover {
+    border-color: white;
+    background-color: rgb(109, 191, 211);
+  }
+  .NavItem a:active,
+  .NavItem a.active {
+    border-color: white;
+  }
+  
+  @media (max-width: 549px) {
+    .NavItem a {
+      border-bottom: none;
+      border-right: 10px solid transparent;
+    }
+  }

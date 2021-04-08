@@ -22,7 +22,7 @@ const ToysControls = ({
   return (
     <div className={classes.ToysControls}>
    
-      <strong >Toys Home</strong>
+      <strong>TOYS</strong>
       {results}
     
       <Button

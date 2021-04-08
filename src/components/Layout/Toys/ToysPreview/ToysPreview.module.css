@@ -31,6 +31,7 @@
   text-shadow: 0 0 1rem blue ;
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 a:focus {
   outline: none;

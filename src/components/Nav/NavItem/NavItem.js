@@ -1,8 +1,8 @@
 import classes from "./NavItem.module.css";
 
-const NacItem = ({ children, url, active }) => {
+const NavItem = ({ children, url, active }) => {
     return ( 
-        <li className={classes.NacItem}>
+        <li className={classes.NavItem}>
             <a href={url} className={active ? classes.active : null}>
                 {children}
             </a>
@@ -10,4 +10,4 @@ const NacItem = ({ children, url, active }) => {
      );
 }
  
-export default NacItem;
+export default NavItem;

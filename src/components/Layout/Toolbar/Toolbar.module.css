@@ -11,3 +11,8 @@
   left:0;
   box-shadow: 0 0  15px rgb(48, 48, 255);
 }
+@media (max-width: 549px) {
+  .Toolbar nav {
+    display: none;
+  }
+}
