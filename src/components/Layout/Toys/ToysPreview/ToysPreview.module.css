@@ -12,7 +12,7 @@
   
 }
 .color{
-  border: 0.1px solid black;
+ 
   border-radius: 30px  ;
   padding: 10px;
   width: 410px;
@@ -23,14 +23,14 @@
 }
 
 .price {
- background-color: #00ff0dd0;
+ background-color: #61d3dbd0;
   border-radius: 5rem;
   padding: 0 4rem;
-  font-size: 2rem;
-  color: blue;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: bold;
   cursor: pointer;
+  color: white;
+  text-shadow: 0 0 1rem blue ;
+  font-size: 2rem;
+  font-weight: bold;
 }
 a:focus {
   outline: none;
