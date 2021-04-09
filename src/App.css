@@ -2,7 +2,8 @@ body{
     font-family: cursive;
     color: rgb(189, 189, 214);
     margin: 0;
-   background-size: cover;
+   background-size: auto;
    background-image: url(./images/back.jpg);
+
    
 }
