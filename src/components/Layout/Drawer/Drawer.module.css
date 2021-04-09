@@ -1,11 +1,12 @@
 .Drawer .content {
-  background-color: tomato;
+  background-color: rgb(109, 191, 211);
   width: 250px;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  padding: .5rem;
 }
 
 .open {

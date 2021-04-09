@@ -1,7 +1,7 @@
 .Logo{
     display: flex;
     align-items: center;
-text-shadow: 0 0 1rem blue;
+    text-shadow: 0 0 1rem blue;
     font-size: 28px;
     color: white;
     font-weight: bold;
@@ -10,5 +10,6 @@ text-shadow: 0 0 1rem blue;
     border-radius: 25px;
     width:70px;
     height: 70px;
-    margin-right: .1rem;   
+    margin-right: .1rem;  
+    padding: .1rem; 
 }
