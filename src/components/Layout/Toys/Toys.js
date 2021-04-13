@@ -14,6 +14,7 @@ const Toys = () => {
   grapes:20,
   bear:200,
   car:150,
+  cat:100,
  
   };
   const [ingredients, setIngredients] = useState({});
