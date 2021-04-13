@@ -1,13 +1,12 @@
 import Button from "../../../../UI/Backdrop/Button/Button";
-// import ToysIngredient from "../../ToysIngredient/ToysIngredient";
 import classes from "./ToysControl.module.css";
 
 const ToysControl = ({ type, add, remove }) => {
   const name ={
-    watermelon:"watermelon",
+    ball:"ball",
     pear:"pear",
     apple:"apple",
-    grapes:"grapes",
+    cat:"cat",
     bear:"bear",
    car:"car",
   }
