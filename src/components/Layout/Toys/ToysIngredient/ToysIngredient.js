@@ -3,10 +3,10 @@ import classes from "./ToysIngredient.module.css";
 
 import appleBackground from "../../../../images/apple.svg";
 import pearBackground from "../../../../images/pear.svg";
-import ballBackground from "../../../../images/ball.png";
+import ballBackground from "../../../../images/ball.svg";
 import bearBackground from "../../../../images/bear.svg";
 import carBackground from "../../../../images/car.svg";
-import catBackground from "../../../../images/cat.png";
+import catBackground from "../../../../images/cat.svg";
 
 const ToysIngredient = ({ type ,fixed }) => {
   const types = {
