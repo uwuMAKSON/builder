@@ -4,7 +4,7 @@ import classes from "./ToysControl.module.css";
 const ToysControl = ({ type, add, remove }) => {
   const name ={
     ball:"ball",
-    pear:"pear",
+    beanbag:"beanbag",
     apple:"apple",
     cat:"cat",
     bear:"bear",
