@@ -1,7 +1,7 @@
 import classes from "./ToysIngredient.module.css";
 
 
-import appleBackground from "../../../../images/apple.svg";
+import pyramidBackground from "../../../../images/pyramid.svg";
 import beanbagBackground from "../../../../images/beanbag.svg";
 import ballBackground from "../../../../images/ball.svg";
 import bearBackground from "../../../../images/bear.svg";
@@ -11,7 +11,7 @@ import catBackground from "../../../../images/cat.svg";
 const ToysIngredient = ({ type ,fixed }) => {
   const types = {
   
-   apple: { backgroundImage: `url(${appleBackground})`, width: "50px", height: "50px" },
+    pyramid: { backgroundImage: `url(${pyramidBackground})`, width: "50px", height: "50px" },
    cat: { backgroundImage: `url(${catBackground})`, width: "50px", height: "50px" },
    beanbag: { backgroundImage: `url(${beanbagBackground})`, width: "50px", height: "50px" },
    bear: { backgroundImage: `url(${bearBackground})`, width: "50px", height: "50px" },

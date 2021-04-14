@@ -9,8 +9,8 @@ import axios from "axios";
 const Toys = () => {
   const prices = {
     ball: 280,
-    pear: 70,
-    apple:60,
+    beanbag: 170,
+    pyramid:60,
   bear:200,
   car:150,
   cat:100,

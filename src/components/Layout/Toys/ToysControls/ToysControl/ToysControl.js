@@ -5,7 +5,7 @@ const ToysControl = ({ type, add, remove }) => {
   const name ={
     ball:"ball",
     beanbag:"beanbag",
-    apple:"apple",
+    pyramid:"pyramid",
     cat:"cat",
     bear:"bear",
    car:"car",
