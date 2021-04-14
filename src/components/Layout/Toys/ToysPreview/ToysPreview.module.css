@@ -12,8 +12,8 @@
 }
 .color{
  
-  border-radius: 5rem  ;
-  padding: 10px;
+  border-radius: 3rem  ;
+  padding: 20px;
   width: 430px;
  min-height: 430px;
   background-color: #61d3dbd0;
@@ -23,7 +23,7 @@
 
 .price {
  background-color: #61d3dbd0;
-  border-radius: 5rem;
+  border-radius: 2.5rem;
   padding: 0 4rem;
   cursor: pointer;
   color: white;
