@@ -15,7 +15,7 @@ const ToysIngredient = ({ type ,fixed }) => {
    cat: { backgroundImage: `url(${catBackground})`, width: "56px", height: "60px" },
    beanbag: { backgroundImage: `url(${beanbagBackground})`, width: "50px", height: "50px" },
    bear: { backgroundImage: `url(${bearBackground})`, width: "50px", height: "50px" },
-    ball: { backgroundImage: `url(${ballBackground})`, width: "50px", height: "50px" },
+    ball: { backgroundImage: `url(${ballBackground})`, width: "48px", height: "48px" },
     car: { backgroundImage: `url(${carBackground})`, width: "55px", height: "61px" },
 
   };
