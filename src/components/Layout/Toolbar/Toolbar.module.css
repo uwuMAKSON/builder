@@ -10,6 +10,7 @@
   top:0;
   left:0;
   box-shadow: 0 0  15px rgb(48, 48, 255);
+  z-index: 1;
 }
 @media (max-width: 549px) {
   .Toolbar nav {
