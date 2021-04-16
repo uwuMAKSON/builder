@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import classes from "./NavItem.module.css";
 
-const NavItem = ({ children, url, active }) => {
+const NavItem = ({ children, url, active, exact }) => {
     return ( 
         <li className={classes.NavItem}>
             <NavLink to={url} activeClassName={classes.active} exact={exact}>{children}
