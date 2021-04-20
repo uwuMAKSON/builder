@@ -10,10 +10,10 @@ const Toys = () => {
   const prices = {
     ball: 280,
     beanbag: 170,
-    pyramid:60,
+    pyramid:160,
   bear:200,
   car:150,
-  cat:100,
+  cat:200,
  
   };
   const [ingredients, setIngredients] = useState({});
