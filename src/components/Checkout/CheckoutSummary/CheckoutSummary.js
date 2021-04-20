@@ -13,7 +13,7 @@ const CheckoutSummary = ({ cancelCallback }) => {
           ball:1,
           beanbag: 1,
           pyramid: 1,
-        }} price={150} />
+        }} price={1020} />
       </div>
       <div>
         <Button>Checkout</Button>
