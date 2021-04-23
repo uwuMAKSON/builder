@@ -26,8 +26,8 @@
   border-radius: 2.5rem;
   padding: 0 4rem;
   cursor: pointer;
-  color: white;
-  text-shadow: 0 0 1rem blue ;
+  color: blue;
+  text-shadow: 0 0 5px rgb(0, 217, 255);
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;

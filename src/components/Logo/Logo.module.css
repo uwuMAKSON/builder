@@ -3,7 +3,8 @@
     align-items: center;
     text-shadow: 0 0 1rem blue;
     font-size: 28px;
-    color: white;
+    color: blue;
+    text-shadow: 0 0 5px rgb(0, 217, 255);
     font-weight: bold;
 }
 .Logo img{
