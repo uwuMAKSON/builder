@@ -16,12 +16,12 @@
   padding: 20px;
   width: 420px;
  min-height: 420px;
-  background-color: #61d3dbd0;
+  background-color: rgba(230, 224, 224, 0.719);
   margin-bottom: 1rem;
 }
 
 .price {
- background-color: #61d3dbd0;
+ background-color: rgb(221, 207, 207);
   border-radius: 2.5rem;
   padding: 0 4rem;
   cursor: pointer;

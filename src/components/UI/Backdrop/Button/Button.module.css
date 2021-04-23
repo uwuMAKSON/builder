@@ -12,6 +12,7 @@
     cursor: pointer;
     transition: .4s;
     box-shadow: 0 0 .5rem  pink;
+
   }
   .Button:not(:disabled):hover {
     background-color:blue;
