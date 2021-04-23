@@ -10,4 +10,5 @@
     padding: 1rem 2rem;
     transition: transform .5s ease-out;
     color: blue;
+    text-transform: capitalize;
   }
