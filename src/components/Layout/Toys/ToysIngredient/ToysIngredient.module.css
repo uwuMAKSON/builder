@@ -10,6 +10,7 @@
     height: 100px;
     -webkit-animation: pulsing 3s infinite;
     animation: pulsing 3s infinite;
+    
   }
   
   @-webkit-keyframes pulsing {
