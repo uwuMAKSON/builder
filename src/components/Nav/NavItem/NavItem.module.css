@@ -16,8 +16,18 @@
     .NavItem a {
       border-bottom: none;
       border-right: 10px solid transparent;
+    
     }
     .NavItem a:active{
       border-color: white;
+    }
+ 
+  }
+  
+  @media (max-width: 549px) {
+   
+    .NavItem a:hover {
+      
+      background-color:rgb(230, 224, 224);
     }
   }
