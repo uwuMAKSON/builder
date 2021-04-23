@@ -1,6 +1,6 @@
 .content {
     position: fixed;
-    z-index: 1;
+    z-index: 6;
     background-color: white;
     box-shadow: 0 0 10px blue;
     width: 60%;
