@@ -2,10 +2,12 @@
     position: fixed;
     z-index: 1;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px blue;
     width: 60%;
     left: 20%;
-    top: 20%;
+    top: 25%;
+    border-radius: 2rem;
     padding: 1rem 2rem;
-    transition: transform .3s ease-out;
+    transition: transform .5s ease-out;
+    color: blue;
   }
