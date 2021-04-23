@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
   margin: .5rem 0;
-  color: white;
-  text-shadow: 0 0 1rem blue ;
+  color: blue;
+text-shadow: 0 0 5px rgb(0, 217, 255);
   font-size: 1.5rem;
   font-weight: bold;
 }

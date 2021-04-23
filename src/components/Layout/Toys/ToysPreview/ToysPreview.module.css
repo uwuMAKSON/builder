@@ -16,8 +16,9 @@
   padding: 20px;
   width: 420px;
  min-height: 420px;
-  background-color: rgba(230, 224, 224, 0.719);
+  background-color:rgb(230, 224, 224);
   margin-bottom: 1rem;
+  box-shadow: 0 0 10px blue;
 }
 
 .price {
