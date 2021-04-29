@@ -1,0 +1,25 @@
+.CheckoutForm div {
+  margin: .4rem;
+    padding: .5rem 1rem ;
+    color: blue;
+    background-color: white;
+    border-radius: 5rem;
+    box-shadow: 0 0 10px blue;
+  }
+  .CheckoutForm div > label {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+  .CheckoutForm div > label:after {
+    content: ":";
+  }
+  .CheckoutForm div > input {
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: 1px solid red;
+    padding-left: 1rem;
+  }
+  .CheckoutForm div > input:focus {
+    outline: none;
+    border-color: red;
+  }

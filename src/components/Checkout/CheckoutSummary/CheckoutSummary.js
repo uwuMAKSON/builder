@@ -1,13 +1,14 @@
+
 import classes from "./CheckoutSummary.module.css";
-import ToysPreview from "../../../components/Layout/Toys/ToysPreview/ToysPreview";
-import Button from "../../UI/Backdrop/Button/Button";
+import ToysPreview from "../../../components/Layout/Toys/ToysPreview/ToysPreview"
+import Button from "../../UI/Backdrop/Button/Button"
+import CheckoutForm from "./CheckoutForm/CheckoutForm";
 
-
-const CheckoutSummary = ({ cancelCallback }) => {
+const CheckoutSummary = ({ submitCallback, cancelCallback }) => {
   return (
     <div className={classes.CheckoutSummary}>
       <div>
-      <ToysPreview ingredients={{
+  <ToysPreview ingredients={{
   bear: 1, 
   car: 1,
   cat: 1,
@@ -16,12 +17,11 @@ const CheckoutSummary = ({ cancelCallback }) => {
   pyramid: 1,
 }} price={1020} />
       </div>
-      <div>
-      <Button>Checkout</Button>
-        <Button onClick={cancelCallback}>Cancel</Button>
-      </div>
+      <CheckoutForm
+        submitCallback={submitCallback}
+        cancelCallback={cancelCallback} />
     </div>
   );
 }
-
-export default CheckoutSummary; 
+ 
+export default CheckoutSummary;  
