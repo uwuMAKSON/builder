@@ -24,7 +24,7 @@ const Checkout = ({ history }) => {
       }
     }
 
-    axios.post('https://builder-a51d0-default-rtdb.firebaseio.com/orders.json', order)
+    axios.post('https://builder-dfdc7-default-rtdb.firebaseio.com/', order)
       .then(response => {
         history.replace('/');
       });
