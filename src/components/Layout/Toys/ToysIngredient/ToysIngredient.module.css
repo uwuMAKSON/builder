@@ -4,7 +4,7 @@
 
   .ToysIngredient {
     background-color: none;
-    box-shadow: 0 0 .3rem blue;
+    box-shadow: 0 0 5px blue;
     border-radius: 50%;
     width: 100px;
     height: 100px;
