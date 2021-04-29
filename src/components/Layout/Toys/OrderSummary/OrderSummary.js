@@ -1,11 +1,20 @@
 import classes from "./OrderSummary.module.css";
 
 const OrderSummary = ({ ingredients, price }) => {
+  const labels = {
+    ball: "ball",
+    beanbag: "beanbag",
+    bear: "bear",
+    car: "car",
+    cat: "cat",
+    pyramid: "pyramid",
+  }
   const results = Object.keys(ingredients)
-    .map(type => <li key={type}>{type}: {ingredients[type]}</li>);
+    .map(type => <li>{labels[type]}: {ingredients[type]}</li>);
 
   return (
     <div className={classes.OrderSummary}>
+      <h3>Order summary</h3>
       <ul>
         {results}
       </ul>
@@ -14,4 +23,4 @@ const OrderSummary = ({ ingredients, price }) => {
   );
 }
 
-export default OrderSummary; 
+export default OrderSummary;
