@@ -5,7 +5,7 @@ import pyramidBackground from "../../../../images/pyramid.svg";
 import beanbagBackground from "../../../../images/beanbag.svg";
 import ballBackground from "../../../../images/ball.svg";
 import bearBackground from "../../../../images/bear.svg";
-import carBackground from "../../../../images/car.svg";
+import bunnyBackground from "../../../../images/bunny.svg";
 import catBackground from "../../../../images/cat.svg";
 
 const ToysIngredient = ({ type ,fixed }) => {
@@ -16,7 +16,7 @@ const ToysIngredient = ({ type ,fixed }) => {
    beanbag: { backgroundImage: `url(${beanbagBackground})`, width: "50px", height: "50px" },
    bear: { backgroundImage: `url(${bearBackground})`, width: "50px", height: "50px" },
     ball: { backgroundImage: `url(${ballBackground})`, width: "50px", height: "50px" },
-    car: { backgroundImage: `url(${carBackground})`, width: "50px", height: "50px" },
+    bunny: { backgroundImage: `url(${bunnyBackground})`, width: "50px", height: "50px" },
 
   };
  

@@ -3,7 +3,7 @@ import NavItem from "./NavItem/NavItem"
 const Nav = () => {
     return (
         <ul className={classes.Nav}>
-            <NavItem url="/" exact>Builder</NavItem>
+            <NavItem url="/Builder" exact>Builder</NavItem>
             <NavItem url="/Checkout" > Checkout</NavItem>
         </ul>
       );

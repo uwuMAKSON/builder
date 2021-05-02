@@ -8,7 +8,7 @@ const ToysControl = ({ type, add, remove }) => {
     pyramid:"pyramid",
     cat:"cat",
     bear:"bear",
-   car:"car",
+   bunny:"bunny",
   }
   return (
     <div className={classes.ToysControl}>

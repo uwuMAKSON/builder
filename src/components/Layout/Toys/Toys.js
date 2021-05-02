@@ -12,7 +12,7 @@ const Toys = () => {
     beanbag: 170,
     pyramid:160,
   bear:200,
-  car:150,
+  bunny:150,
   cat:200,
  
   };
