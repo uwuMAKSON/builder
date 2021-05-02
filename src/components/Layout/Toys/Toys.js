@@ -13,7 +13,7 @@ const Toys = () => {
     pyramid:160,
   bear:200,
   bunny:150,
-  cat:200,
+  girrafe:200,
  
   };
   const [ingredients, setIngredients] = useState({});

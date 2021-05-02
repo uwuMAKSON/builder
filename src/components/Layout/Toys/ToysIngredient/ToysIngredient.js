@@ -6,13 +6,13 @@ import beanbagBackground from "../../../../images/beanbag.svg";
 import ballBackground from "../../../../images/ball.svg";
 import bearBackground from "../../../../images/bear.svg";
 import bunnyBackground from "../../../../images/bunny.svg";
-import catBackground from "../../../../images/cat.svg";
+import girrafeBackground from "../../../../images/girrafe.svg";
 
 const ToysIngredient = ({ type ,fixed }) => {
   const types = {
   
     pyramid: { backgroundImage: `url(${pyramidBackground})`, width: "50px", height: "50px" },
-   cat: { backgroundImage: `url(${catBackground})`, width: "50px", height: "50px" },
+   girrafe: { backgroundImage: `url(${girrafeBackground})`, width: "50px", height: "50px" },
    beanbag: { backgroundImage: `url(${beanbagBackground})`, width: "50px", height: "50px" },
    bear: { backgroundImage: `url(${bearBackground})`, width: "50px", height: "50px" },
     ball: { backgroundImage: `url(${ballBackground})`, width: "50px", height: "50px" },
