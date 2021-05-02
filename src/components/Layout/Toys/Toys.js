@@ -10,7 +10,7 @@ const Toys = () => {
   const prices = {
     ball: 280,
     beanbag: 170,
-    pyramid:160,
+    robot:160,
   bear:200,
   bunny:150,
   girrafe:200,
