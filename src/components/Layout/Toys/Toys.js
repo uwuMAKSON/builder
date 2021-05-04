@@ -1,75 +1,78 @@
 import ToysPreview from "./ToysPreview/ToysPreview";
 import ToysControls from "./ToysControls/ToysControls";
-import OrderSummary from "./OrderSummary/OrderSummary";
-import Modal from "../../UI/Backdrop/Modal/Modal";
-import classes from "./Toys.module.css";
+
+import classes from "./ToysBuilder.module.css";
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-// import axios from "axios";
+import axios from "axios";
+import Modal from "../../UI/Backdrop/Modal/Modal";
+import OrderSummary from "./OrderSummary/OrderSummary";
+import Button from "../../UI/Backdrop/Button/Button";
 
-const Toys = () => {
-  const prices = {
-    ball: 280,
-    beanbag: 170,
-    robot:160,
-  bear:200,
-  bunny:150,
-  girrafe:200,
+const ToysBuilder = ({ history }) => {
  
-  };
-  const ingredients = useSelector(state => state.ingredients)
+  const [ingredients, setIngredients] = useState({});
   const [price, setPrice] = useState(0);
-  const [canBuy, setCanBuy] = useState(true);
-  const [isBuying, setIsBuying] = useState(false);
+  const [ordering, setOrdering] = useState(false);
 
-  // useEffect(() => {
-  //   axios.get('https://builder-dfdc7-default-rtdb.firebaseio.com/default.json')
-  //   .then(response => {
-  //     setIngredients(response.data.ingredients);
-  //     setPrice(response.data.price);
-  //   });
-  // }, []);
+  useEffect(loadDefaults, []);
 
-  function checkCanBuy(newIngredients) {
-    const totalIngredients = Object.values(newIngredients)
-      .reduce((total, current) => total + current);
-    setCanBuy(totalIngredients > 0);
+  function loadDefaults() {
+    axios
+      .get('https://builder-dfdc7-default-rtdb.firebaseio.com/')
+      .then(response => {
+        setPrice(response.data.price);
+
+        // For arrays
+        // setIngredients(Object.values(response.data.ingredients));
+        // For objects
+        setIngredients(response.data.ingredients);
+      });
+  }
+  function startOrdering() {
+    setOrdering(true);
   }
 
-
-  function addIngredient(type) {
-    const newIngredients = { ...ingredients };
-    newIngredients[type]++;
-    checkCanBuy(newIngredients);
-    setPrice(price + prices[type]);
- 
+  function stopOrdering() {
+    setOrdering(false);
   }
 
-  function removeIngredient(type) {
-    if (ingredients[type]){
-    const newIngredients = { ...ingredients };
-    newIngredients[type]--;
-    checkCanBuy(newIngredients);
-    setPrice(price - prices[type]);
-
-   } }
+  function finishOrdering() {
+    axios
+      .post('https://builder-a51d0-default-rtdb.firebaseio.com/orders.json', {
+        ingredients: ingredients,
+        price: price,
+        address: "1234 Jusaeva str",
+        phone: "0 777 777 777",
+        name: "Sadyr Japarov",
+      })
+      .then(() => {
+        setOrdering(false);
+        loadDefaults();
+        history.push('/checkout');
+      });
+  }
 
   return (
-    <div className={classes.Toys}>
-        <Modal show={isBuying} cancelCallback={() => setIsBuying(false)}>
-       <OrderSummary ingredients={ingredients} price={price} /></Modal>
-      <ToysPreview ingredients={ingredients}
-      price={price} />
-      <ToysControls
-      
-       canBuy={canBuy}
-       setIsBuying={setIsBuying}
+    <div className={classes.ToysBuilder}>
+      <ToysPreview
         ingredients={ingredients}
-        addIngredient={addIngredient}
-        removeIngredient={removeIngredient}
+        price={price} />
+      <ToysControls
+        ingredients={ingredients}
+        startOrdering={startOrdering}
         />
+      <Modal
+        show={ordering}
+        cancel={stopOrdering}>
+          <OrderSummary
+            ingredients={ingredients}
+            price={price}
+            />
+          <Button onClick={finishOrdering} green>Checkout</Button>
+          <Button onClick={stopOrdering}>Cancel</Button>
+        </Modal>
     </div>
   );
 }
 
-export default Toys;
+export default ToysBuilder;

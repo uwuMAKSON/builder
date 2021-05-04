@@ -3,35 +3,33 @@ import ToysControl from "./ToysControl/ToysControl";
 import classes from "./ToysControls.module.css";
 
 const ToysControls = ({
-    ingredients,
-    addIngredient,
-    removeIngredient,
-    canBuy,
-    setIsBuying
-  }) => {
+  ingredients,
+  addIngredient,
+  removeIngredient,
+  startOrdering
+}) => {
   const results = [];
+  let total = 0;
   for (const ingredient in ingredients) {
+    // Add ingredient number to totals number
+    total += ingredients[ingredient];
+    // Render Toys control for this ingredient
     results.push(<ToysControl
         key={ingredient}
         add={addIngredient}
         remove={removeIngredient}
-        type={ingredient} />
-        )
+        count={ingredients[ingredient]}
+        type={ingredient} />)
   }
 
   return (
     <div className={classes.ToysControls}>
-   
-      <strong>TOYS</strong>
+      <strong>Ingredients</strong>
       {results}
-    
-      <Button
-        onClick={() => setIsBuying(true)}
-        disabled={!canBuy}>
-          Order
-      </Button>
+      <Button disabled={!total} onClick={startOrdering}>Order</Button>
     </div>
   );
 }
+
 
 export default ToysControls;
