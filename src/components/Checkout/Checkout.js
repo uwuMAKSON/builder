@@ -1,40 +1,40 @@
+import ToysPreview from "../Layout/Toys/ToysPreview/ToysPreview";
+import CheckoutForm from "../Checkout/CheckoutSummary/CheckoutForm/CheckoutForm";
+import classes from "./Checkout.module.css";
 import axios from "axios";
-import CheckoutSummary from "./CheckoutSummary/CheckoutSummary"
+import { useSelector } from "react-redux";
+
 
 const Checkout = ({ history }) => {
+  const ingredients = useSelector(state => state.ingredients);
+  const price = useSelector(state => state.price);
+
   function cancelCallback() {
     history.replace('/');
   }
 
   function submitCallback(event) {
-    event.preventDefault();
-
     const data = new FormData(event.target);
-    const order = {
-      name: data.get('name'),
-      phone: data.get('phone'),
-      address: data.get('address'),
-      ingredients: {
-        ball: 1,
-        beanbag: 1,
-        bear: 1,
-        car: 1,
-        cat: 1,
-        pyramid: 1,
-      }
-    }
 
-    axios.post('https://builder-dfdc7-default-rtdb.firebaseio.com/', order)
-      .then(response => {
-        history.replace('/');
-      });
+    axios.post('https://builder-dfdc7-default-rtdb.firebaseio.com/', {
+      name: data.get('name'),
+      address: data.get('address'),
+      phone: data.get('phone'),
+      ingredients: ingredients,
+      price: price,
+    }).then(response => {
+      history.replace('/');
+    });
+
+    event.preventDefault();
   }
 
   return (
-    <div>
-      <CheckoutSummary
-        submitCallback={submitCallback}
-        cancelCallback={cancelCallback} />
+    <div className={classes.Checkout}>
+      <ToysPreview ingredients={ingredients} price={price} />
+      <CheckoutForm
+        cancelCallback={cancelCallback}
+        submitCallback={submitCallback} />
     </div>
   );
 }

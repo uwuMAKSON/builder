@@ -4,8 +4,6 @@ import classes from "./ToysControls.module.css";
 
 const ToysControls = ({
   ingredients,
-  addIngredient,
-  removeIngredient,
   startOrdering
 }) => {
   const results = [];
@@ -16,8 +14,6 @@ const ToysControls = ({
     // Render Toys control for this ingredient
     results.push(<ToysControl
         key={ingredient}
-        add={addIngredient}
-        remove={removeIngredient}
         count={ingredients[ingredient]}
         type={ingredient} />)
   }

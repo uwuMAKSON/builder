@@ -7,11 +7,11 @@ const ToysControl = ({ type, count }) => {
 const dispatch = useDispatch();
   return (
     <div className={classes.ToysControl}>
- <Button onClick={() => dispatch({type: "ADD_INGREDIENT", type })}>+</Button>
+ <Button onClick={() => dispatch({type: "ADD_INGREDIENT", ingredient:type })}>+</Button>
       <div className={classes.ingredient}>
         <ToysIngredient type={type} fixed />
       </div>
-      <Button onClick={() => dispatch({type: "REMOVE_INGREDIENT", type })} disable={!count}>-</Button>
+      <Button onClick={() => dispatch({type: "REMOVE_INGREDIENT", ingredient:type  })} disable={!count}>-</Button>
     </div>
   );
 }

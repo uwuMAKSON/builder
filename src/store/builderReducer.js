@@ -22,14 +22,17 @@ const builderReducer = (state = initialState, action) => {
     const newState = { ...state }
     switch (action.type) {
         case "ADD_INGREDIENT":
-            newState.ingredients[action.ingredients]++;
+            newState.ingredients[action.ingredient]++;
+            newState.price += prices[action.ingredient]
             break;
             case "REMOVE_INGREDIENT":
-                newState.ingredients[action.ingredients]--;
+                newState.ingredients[action.ingredient]--;
+                newState.price -= prices[action.ingredient]
             break;
 
             default:
                 break;
     }
-    return state;
+    return newState;
 }
+export default builderReducer;
