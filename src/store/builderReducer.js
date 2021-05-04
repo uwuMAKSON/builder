@@ -1,5 +1,5 @@
 const initialState = {
-    ingredients: {
+    toys: {
         ball: 1,
         beanbag: 1,
         robot:1,
@@ -21,13 +21,13 @@ const prices = {
 const builderReducer = (state = initialState, action) => {
     const newState = { ...state }
     switch (action.type) {
-        case "ADD_INGREDIENT":
-            newState.ingredients[action.ingredient]++;
-            newState.price += prices[action.ingredient]
+        case "ADD_TOYS":
+            newState.toys[action.toy]++;
+            newState.price += prices[action.toy]
             break;
-            case "REMOVE_INGREDIENT":
-                newState.ingredients[action.ingredient]--;
-                newState.price -= prices[action.ingredient]
+            case "REMOVE_TOYS":
+                newState.toys[action.toy]--;
+                newState.price -= prices[action.toy]
             break;
 
             default:

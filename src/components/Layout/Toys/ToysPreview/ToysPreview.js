@@ -1,12 +1,12 @@
-import ToysAll from "../ToysIngredient/ToysIngredient";
+import ToysAll from "../ToysIngredient/Toys";
 import classes from "./ToysPreview.module.css";
 
 
-const ToysPreview = ({ ingredients,price }) => {
+const ToysPreview = ({ toys,price }) => {
   const result = [];
-  for (const ingredient in ingredients) {
-    for (let i = 0; i < ingredients[ingredient]; i++) {
-      result.push(<ToysAll key={ingredient + i} type={ingredient} />)
+  for (const toy in toys) {
+    for (let i = 0; i < toys[toy]; i++) {
+      result.push(<ToysAll key={toy + i} type={toy} />)
     }
   }
 

@@ -1,4 +1,4 @@
-import classes from "./ToysIngredient.module.css";
+import classes from "./Toys.module.css";
 
 
 import robotBackground from "../../../../images/robot.svg";
@@ -8,7 +8,7 @@ import bearBackground from "../../../../images/bear.svg";
 import bunnyBackground from "../../../../images/bunny.svg";
 import girrafeBackground from "../../../../images/girrafe.svg";
 
-const ToysIngredient = ({ type ,fixed }) => {
+const Toys = ({ type ,fixed }) => {
   const types = {
   
     robot: { backgroundImage: `url(${robotBackground})`, width: "50px", height: "50px" },
@@ -21,7 +21,7 @@ const ToysIngredient = ({ type ,fixed }) => {
   };
  
   return (
-    <div className={classes.ToysIngredient} style={types[type]}></div>
+    <div className={classes.Toys} style={types[type]}></div>
   );
 }
-export default ToysIngredient;
+export default Toys;

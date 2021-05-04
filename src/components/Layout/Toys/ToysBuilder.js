@@ -1,6 +1,6 @@
 import ToysPreview from "./ToysPreview/ToysPreview";
 import ToysControls from "./ToysControls/ToysControls";
-import classes from "./Toys.module.css";
+import classes from "./ToysBuilder.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Modal from "../../UI/Backdrop/Modal/Modal";
@@ -9,7 +9,7 @@ import Button from "../../UI/Backdrop/Button/Button";
 import { useSelector } from "react-redux";
 
 const ToysBuilder = ({ history }) => {
-  const ingredients = useSelector(state => state.ingredients);
+  const toys = useSelector(state => state.toys);
   const price = useSelector(state => state.price);
   const [ordering, setOrdering] = useState(false);
   // useEffect(loadDefaults, []);
@@ -20,9 +20,9 @@ const ToysBuilder = ({ history }) => {
   //       setPrice(response.data.price);
 
   //       // For arrays
-  //       // setIngredients(Object.values(response.data.ingredients));
+  //       // setToys(Object.values(response.data.toys));
   //       // For objects
-  //       setIngredients(response.data.ingredients);
+  //       setToys(response.data.toys);
   //     });
   // }
   function startOrdering() {
@@ -38,10 +38,10 @@ const ToysBuilder = ({ history }) => {
   }
   return (
     <div className={classes.ToysBuilder}>
-      <ToysPreview ingredients={ingredients} price={price}/>
-      <ToysControls ingredients={ingredients} startOrdering={startOrdering}/>
+      <ToysPreview toys={toys} price={price}/>
+      <ToysControls toys={toys} startOrdering={startOrdering}/>
       <Modal show={ordering} cancel={stopOrdering}>
-      <OrderSummary ingredients={ingredients} price={price}/>
+      <OrderSummary toys={toys} price={price}/>
           <Button onClick={finishOrdering} green>Checkout</Button>
           <Button onClick={stopOrdering}>Cancel</Button>
         </Modal>

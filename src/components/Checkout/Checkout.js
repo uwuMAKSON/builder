@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 
 const Checkout = ({ history }) => {
-  const ingredients = useSelector(state => state.ingredients);
+  const toys = useSelector(state => state.toys);
   const price = useSelector(state => state.price);
 
   function cancelCallback() {
@@ -20,7 +20,7 @@ const Checkout = ({ history }) => {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
-      ingredients: ingredients,
+      toys: toys,
       price: price,
     }).then(response => {
       history.replace('/');
@@ -31,7 +31,7 @@ const Checkout = ({ history }) => {
 
   return (
     <div className={classes.Checkout}>
-      <ToysPreview ingredients={ingredients} price={price} />
+      <ToysPreview toys={toys} price={price} />
       <CheckoutForm
         cancelCallback={cancelCallback}
         submitCallback={submitCallback} />
