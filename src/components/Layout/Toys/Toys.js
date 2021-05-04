@@ -4,7 +4,8 @@ import OrderSummary from "./OrderSummary/OrderSummary";
 import Modal from "../../UI/Backdrop/Modal/Modal";
 import classes from "./Toys.module.css";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import { useSelector } from "react-redux";
+// import axios from "axios";
 
 const Toys = () => {
   const prices = {
@@ -16,18 +17,18 @@ const Toys = () => {
   girrafe:200,
  
   };
-  const [ingredients, setIngredients] = useState({});
+  const ingredients = useSelector(state => state.ingredients)
   const [price, setPrice] = useState(0);
   const [canBuy, setCanBuy] = useState(true);
   const [isBuying, setIsBuying] = useState(false);
 
-  useEffect(() => {
-    axios.get('https://builder-dfdc7-default-rtdb.firebaseio.com/default.json')
-    .then(response => {
-      setIngredients(response.data.ingredients);
-      setPrice(response.data.price);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get('https://builder-dfdc7-default-rtdb.firebaseio.com/default.json')
+  //   .then(response => {
+  //     setIngredients(response.data.ingredients);
+  //     setPrice(response.data.price);
+  //   });
+  // }, []);
 
   function checkCanBuy(newIngredients) {
     const totalIngredients = Object.values(newIngredients)
@@ -41,7 +42,7 @@ const Toys = () => {
     newIngredients[type]++;
     checkCanBuy(newIngredients);
     setPrice(price + prices[type]);
-    setIngredients(newIngredients);
+ 
   }
 
   function removeIngredient(type) {
@@ -50,7 +51,7 @@ const Toys = () => {
     newIngredients[type]--;
     checkCanBuy(newIngredients);
     setPrice(price - prices[type]);
-    setIngredients(newIngredients);
+
    } }
 
   return (

@@ -4,7 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux';
-const store = createStore(builderReducer)
+
+const store = createStore(builderReducer);
+
 ReactDOM.render(
    <React.StrictMode>
   <Provider store={store}>

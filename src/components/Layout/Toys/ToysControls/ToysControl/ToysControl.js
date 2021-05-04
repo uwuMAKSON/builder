@@ -1,23 +1,17 @@
+import { useDispatch } from "react-redux";
 import Button from "../../../../UI/Backdrop/Button/Button";
 import classes from "./ToysControl.module.css";
+import ToysIngredient from "../../ToysIngredient/ToysIngredient"
 
-const ToysControl = ({ type, add, remove }) => {
-  const name ={
-    ball:"ball",
-    beanbag:"beanbag",
-    robot:"robot",
-    girrafe:"girrafe",
-    bear:"bear",
-   bunny:"bunny",
-  }
+const ToysControl = ({ type, count }) => {
+const dispatch = useDispatch();
   return (
     <div className={classes.ToysControl}>
- <Button onClick={() => add(type)}>+</Button>
+ <Button onClick={() => dispatch({type: "ADD_INGREDIENT", type })}>+</Button>
       <div className={classes.ingredient}>
-        {/* <ToysIngredient type={type} fixed /> */}
-        {name[type]}
+        <ToysIngredient type={type} fixed />
       </div>
-      <Button onClick={() => remove(type)}>-</Button>
+      <Button onClick={() => dispatch({type: "REMOVE_INGREDIENT", type })} disable={!count}>-</Button>
     </div>
   );
 }
