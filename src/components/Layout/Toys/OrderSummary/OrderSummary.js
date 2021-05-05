@@ -5,9 +5,9 @@ const OrderSummary = ({ toys, price }) => {
     ball: "ball",
     beanbag: "beanbag",
     bear: "bear",
-    car: "car",
-    cat: "cat",
-    pyramid: "pyramid",
+    bunny: "bunny",
+    robot: "robot",
+    girrafe: "girrafe",
   }
   const results = Object.keys(toys)
     .map(type => <li>{labels[type]}: {toys[type]}</li>);
