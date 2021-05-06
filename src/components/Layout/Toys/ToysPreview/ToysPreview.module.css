@@ -40,7 +40,6 @@ a:focus {
   .color{
     width: 400px;
     min-height: 400px;
-    /* background-color:rgb(230, 224, 224); */
     background-color: white;
     margin-bottom: 1rem;
     box-shadow: 0 0 10px blue;
