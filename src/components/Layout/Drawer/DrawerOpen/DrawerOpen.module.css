@@ -7,9 +7,9 @@
   margin-right: .5rem;
 }
 .DrawerOpen > div {
-  height: 3px;
-  width: 2rem;
-  background-color: white;
+  height: 4px;
+  width: 2.5rem;
+  background-color:blue;
 }
 .DrawerOpen > div:not(:last-child) {
   margin-bottom: .5rem;

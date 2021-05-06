@@ -6,6 +6,7 @@
     display: block;
     padding: 1.6rem 2rem 1.2rem;
     transition: all .2s ease-in;
+    font-size: 27px;
   }
   .NavItem a:hover {
     border-color: white;
@@ -19,7 +20,7 @@
     
     }
     .NavItem a:active{
-      border-color: white;
+      border-color: red;
     }
  
   }
