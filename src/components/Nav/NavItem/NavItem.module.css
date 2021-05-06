@@ -9,11 +9,17 @@
     font-size: 27px;
   }
   .NavItem a:hover {
-    border-color: white;
+
     background-color: rgb(109, 191, 211);
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.575);
+    border-radius: 1rem;
   }
-  .NavItem a:active{
-    border-color: blue;
+  .NavItem a:active,
+  .NavItem a.active {
+    
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.575);
+    border-radius: 1rem;
+    
   }
   @media (max-width: 549px) {
     .NavItem a {
@@ -22,7 +28,8 @@
     
     }
     .NavItem a:active{
-      border-color: blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.575);
+    border-radius: 1rem;
     }
  
   }
@@ -30,7 +37,8 @@
   @media (max-width: 549px) {
    
     .NavItem a:hover {
-      
+      box-shadow: 0 0 5px rgba(0, 0, 255, 0.575);
+      border-radius: 1rem;
       background-color:rgb(109, 191, 211);
     }
   }
