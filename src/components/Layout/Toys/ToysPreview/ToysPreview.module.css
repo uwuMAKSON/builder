@@ -22,7 +22,8 @@
 }
 
 .price {
- background-color: rgb(221, 207, 207);
+  box-shadow: 0 0 10px blue;
+ background-color: white;
   border-radius: 2.5rem;
   padding: 0 4rem;
   cursor: pointer;
