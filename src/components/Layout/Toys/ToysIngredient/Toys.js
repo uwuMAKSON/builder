@@ -11,12 +11,12 @@ import girrafeBackground from "../../../../images/girrafe.svg";
 const Toys = ({ type ,fixed }) => {
   const types = {
   
-    robot: { backgroundImage: `url(${robotBackground})`, width: "50px", height: "50px" },
-   girrafe: { backgroundImage: `url(${girrafeBackground})`, width: "50px", height: "50px" },
-   beanbag: { backgroundImage: `url(${beanbagBackground})`, width: "50px", height: "50px" },
-   bear: { backgroundImage: `url(${bearBackground})`, width: "50px", height: "50px" },
-    ball: { backgroundImage: `url(${ballBackground})`, width: "50px", height: "50px" },
-    bunny: { backgroundImage: `url(${bunnyBackground})`, width: "50px", height: "50px" },
+    robot: { backgroundImage: `url(${robotBackground})`, width: "60px", height: "60px" },
+   girrafe: { backgroundImage: `url(${girrafeBackground})`, width: "60px", height: "60px" },
+   beanbag: { backgroundImage: `url(${beanbagBackground})`, width: "60px", height: "60px" },
+   bear: { backgroundImage: `url(${bearBackground})`, width: "60px", height: "60px" },
+    ball: { backgroundImage: `url(${ballBackground})`, width: "60px", height: "60px" },
+    bunny: { backgroundImage: `url(${bunnyBackground})`, width: "60px", height: "60px" },
 
   };
  

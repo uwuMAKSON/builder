@@ -6,7 +6,8 @@
 text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color:  rgb(230, 224, 224);
+  /* background-color:  rgb(230, 224, 224); */
+  background-color: white;
 color: blue;
 font-size: 2rem;
 text-shadow: 0 0 5px rgb(0, 217, 255);
