@@ -11,13 +11,13 @@
   flex-direction: row;
 }
 .color{
-  width: 420px;
-  min-height: 420px;
+  width: 500px;
+  min-height: 400px;
   /* background-color:rgb(230, 224, 224); */
   background-color: white;
   margin-bottom: 1rem;
   box-shadow: 0 0 10px blue;
-  border-radius: 3rem  ;
+  border-radius: 2rem  ;
   padding: 20px;
 }
 
@@ -35,4 +35,16 @@
 }
 a:focus {
   outline: none;
+}
+@media (max-width:630px){
+  .color{
+    width: 400px;
+    min-height: 400px;
+    /* background-color:rgb(230, 224, 224); */
+    background-color: white;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px blue;
+    border-radius: 2rem  ;
+    padding: 20px;
+  }
 }
