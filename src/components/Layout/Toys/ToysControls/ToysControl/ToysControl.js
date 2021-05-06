@@ -6,12 +6,12 @@ import classes from "./ToysControl.module.css";
 const ToysControl = ({ type, count }) => {
 const dispatch = useDispatch();
 const names = {
-  ball: "ball",
-  beanbag: "beanbag",
-  robot:"robot",
-  bear:"bear",
-  bunny:"bunny",
-  girrafe:"girrafe",
+  ball: "Ball",
+  beanbag: "Beanbag",
+  robot:"Robot",
+  bear:"Bear",
+  bunny:"Bunny",
+  girrafe:"Girrafe",
 }
   return (
     <div className={classes.ToysControl}>
