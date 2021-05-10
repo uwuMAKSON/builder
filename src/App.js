@@ -15,6 +15,8 @@ const App =() =>{
     <Redirect to="/"/>
     </Switch>
     </Layout>
+    <h1>hello world</h1>
+    <p>lorem</p>
     </div>
   );
 }
