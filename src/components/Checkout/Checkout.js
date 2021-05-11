@@ -6,8 +6,8 @@ import { useSelector } from "react-redux";
 
 
 const Checkout = ({ history }) => {
-  const toys = useSelector(state => state.toys);
-  const price = useSelector(state => state.price);
+  const toys = useSelector(state => state.builder.toys);
+  const price = useSelector(state => state.builder.price);
 
   function cancelCallback() {
     history.replace('/');

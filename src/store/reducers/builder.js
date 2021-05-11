@@ -18,7 +18,7 @@ const prices = {
     girrafe:290,
   };
 
-const builderReducer = (state = initialState, action) => {
+const builder = (state = initialState, action) => {
     const newState = { ...state }
     switch (action.type) {
         case "ADD_TOYS":
@@ -35,4 +35,4 @@ const builderReducer = (state = initialState, action) => {
     }
     return newState;
 }
-export default builderReducer;
+export default builder;

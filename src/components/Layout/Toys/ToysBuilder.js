@@ -9,8 +9,8 @@ import Button from "../../UI/Backdrop/Button/Button";
 import { useSelector } from "react-redux";
 
 const ToysBuilder = ({ history }) => {
-  const toys = useSelector(state => state.toys);
-  const price = useSelector(state => state.price);
+  const toys = useSelector(state => state.builder.toys);
+  const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
   // useEffect(loadDefaults, []);
   // function loadDefaults() {
