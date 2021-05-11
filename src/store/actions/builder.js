@@ -1,14 +1,14 @@
-import axios from "../../axios";
+import axios from "axios";
 import { ADD_TOY, REMOVE_TOY, SET_TOYS } from "./types";
 
-export const add = (Toy) => ({
+export const add = (ingredient) => ({
   type: ADD_TOY,
-  Toy: Toy
+  ingredient: ingredient
 });
 
-export const remove = (Toy) => ({
+export const remove = (ingredient) => ({
   type: REMOVE_TOY,
-  Toy: Toy
+  ingredient: ingredient
 });
 
 export const set = (data) => ({
@@ -17,6 +17,7 @@ export const set = (data) => ({
 });
 
 export const load = () => {
-  return (dispatch) => axios.get("/default.json")
-    .then(response => dispatch(set(response.data)))
-};
+  return (dispatch) => axios
+    .get('https://builder-dfdc7-default-rtdb.firebaseio.com/default.json')
+    .then(response => dispatch(set(response.data)));
+}
