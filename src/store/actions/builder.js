@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../../axios";
 import { ADD_TOY, REMOVE_TOY, SET_TOYS } from "./types";
 
 export const add = (ingredient) => ({
@@ -18,6 +18,6 @@ export const set = (data) => ({
 
 export const load = () => {
   return (dispatch) => axios
-    .get('https://builder-dfdc7-default-rtdb.firebaseio.com/default.json')
+    .get('/default.json')
     .then(response => dispatch(set(response.data)));
 }
