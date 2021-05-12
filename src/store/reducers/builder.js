@@ -1,5 +1,6 @@
 
-import { ADD_TOY, REMOVE_TOY } from "../actions/types";
+  
+import { ADD_TOY, REMOVE_TOY, SET_TOYS } from "../actions/types";
 
 const initialState = {
     toys: {},
@@ -16,6 +17,7 @@ const prices = {
 
   const builder = (state = initialState, action) => {
     const newState = { ...state };
+  
     switch (action.type) {
       case ADD_TOY:
         newState.toys[action.ingredient]++;
@@ -25,11 +27,14 @@ const prices = {
         newState.toys[action.ingredient]--;
         newState.price -= prices[action.ingredient];
         break;
+      case SET_TOYS:
+        return { ...action.data };
     
       default:
         break;
     }
+  
     return newState;
   }
   
-export default builder;
+  export default builder;
