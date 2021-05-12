@@ -4,6 +4,7 @@
     font-size: 1.5rem;
     justify-content: center;
     text-align: center;
+    color: red;
   }
   .CheckoutForm > div {
     flex: 0 0 100%;
@@ -15,11 +16,11 @@
   }
   .CheckoutForm > div > input {
     border-radius: 1rem;
-    border: 1px solid lightgray;
+    border: 1px solid red;
     font-size: 1.5rem;
     padding: 0 1rem;
   }
   .CheckoutForm > div > input:focus {
     outline: none;
-    border-color: darkgray;
+    border-color: red;
   }
