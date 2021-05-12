@@ -1,13 +1,9 @@
+
+import { ADD_TOY, REMOVE_TOY } from "../actions/types";
+
 const initialState = {
-    toys: {
-        ball: 1,
-        beanbag: 1,
-        robot:1,
-        bear:1,
-        bunny:1,
-        girrafe:1,
-    },
-    price:1020
+    toys: {},
+    price:0
 };
 const prices = {
     ball: 200,
@@ -18,21 +14,22 @@ const prices = {
     girrafe:290,
   };
 
-const builder = (state = initialState, action) => {
-    const newState = { ...state }
+  const builder = (state = initialState, action) => {
+    const newState = { ...state };
     switch (action.type) {
-        case "ADD_TOYS":
-            newState.toys[action.toy]++;
-            newState.price += prices[action.toy]
-            break;
-            case "REMOVE_TOYS":
-                newState.toys[action.toy]--;
-                newState.price -= prices[action.toy]
-            break;
-
-            default:
-                break;
+      case ADD_TOY:
+        newState.toys[action.ingredient]++;
+        newState.price += prices[action.ingredient];
+        break;
+      case REMOVE_TOY:
+        newState.toys[action.ingredient]--;
+        newState.price -= prices[action.ingredient];
+        break;
+    
+      default:
+        break;
     }
     return newState;
-}
+  }
+  
 export default builder;

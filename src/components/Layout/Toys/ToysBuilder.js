@@ -7,6 +7,9 @@ import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../../UI/Backdrop/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { load } from "../../../store/actions/builder";
+import withAxios from "../../withAxios";
+import axios from "../../../axios";
+
 
 const ToysBuilder = ({ history }) => {
   const dispatch = useDispatch();
@@ -53,4 +56,4 @@ const ToysBuilder = ({ history }) => {
   );
 }
 
-export default ToysBuilder;
+export default withAxios(ToysBuilder, axios); 
