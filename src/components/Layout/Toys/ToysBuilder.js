@@ -29,7 +29,6 @@ const ToysBuilder = ({ history }) => {
 
   function finishOrdering() {
     setOrdering(false);
-    // loadDefaults();
     history.push('/checkout');
   }
 
@@ -49,7 +48,8 @@ const ToysBuilder = ({ history }) => {
             toys={toys}
             price={price}
             />
-          <Button onClick={finishOrdering} green="green">Checkout</Button>
+          <Button onClick={finishOrdering}
+          green="green">Checkout</Button>
           <Button onClick={stopOrdering}>Cancel</Button>
         </Modal>
     </div>

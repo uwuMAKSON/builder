@@ -1,14 +1,14 @@
 import axios from "../../axios";
 import { ADD_TOY, REMOVE_TOY, SET_TOYS } from "./types";
 
-export const add = (ingredient) => ({
+export const add = (toy) => ({
   type: ADD_TOY,
-  ingredient: ingredient
+  toy: toy
 });
 
-export const remove = (ingredient) => ({
+export const remove = (toy) => ({
   type: REMOVE_TOY,
-  ingredient: ingredient
+  toy: toy
 });
 
 export const set = (data) => ({

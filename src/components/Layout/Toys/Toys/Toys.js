@@ -1,4 +1,5 @@
 import classes from "./Toys.module.css";
+import React from "react";
 
 
 import robotBackground from "../../../../images/robot.svg";
@@ -24,4 +25,4 @@ const Toys = ({ type ,fixed }) => {
     <div className={classes.Toys} style={types[type]}></div>
   );
 }
-export default Toys;
+export default React.memo(Toys);

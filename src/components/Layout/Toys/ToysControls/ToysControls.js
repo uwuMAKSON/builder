@@ -9,9 +9,7 @@ const ToysControls = ({
   const results = [];
   let total = 0;
   for (const toy in toys) {
-    // Add toy number to totals number
     total += toys[toy];
-    // Render Toys control for this toy
     results.push(<ToysControl
         key={toy}
         count={toys[toy]}
@@ -22,7 +20,7 @@ const ToysControls = ({
     <div className={classes.ToysControls}>
       <strong>Toys</strong>
       {results}
-      <Button disabled={!total} onClick={startOrdering}>Order</Button>
+      <Button disabled={!total}onClick={startOrdering}>Order</Button>
     </div>
   );
 }

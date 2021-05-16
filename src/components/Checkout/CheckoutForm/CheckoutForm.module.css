@@ -1,14 +1,14 @@
 .CheckoutForm {
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     justify-content: center;
     text-align: center;
-    color: red;
+    color: blue;
   }
   .CheckoutForm > div {
     flex: 0 0 100%;
-    padding: .2rem 1rem;
+    padding: .3rem 1.5rem;
   }
   .CheckoutForm > div > label::after {
     content: ":";
@@ -16,9 +16,11 @@
   }
   .CheckoutForm > div > input {
     border-radius: 1rem;
-    border: 1px solid red;
+    box-shadow: 0 0 10px blue;
+    border: none;
     font-size: 1.5rem;
     padding: 0 1rem;
+    margin-bottom: .5rem;
   }
   .CheckoutForm > div > input:focus {
     outline: none;
