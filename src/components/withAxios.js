@@ -10,11 +10,13 @@
         setError(false);
       }
   
-      const requestInterceptor = axios.interceptors.request.use((request) => {
+      const requestInterceptor = 
+      axios.interceptors.request.use((request) => {
         setError(false);
         return request;
       });
-      const responseInterceptor = axios.interceptors.response.use(
+      const responseInterceptor = 
+      axios.interceptors.response.use(
         (response) => {
           return response;
         },
@@ -23,11 +25,12 @@
           return Promise.reject(error);
         }
       );
-  
       useEffect(() => {
         return () => {
-          axios.interceptors.request.eject(requestInterceptor);
-          axios.interceptors.response.eject(responseInterceptor);
+          axios.interceptors.request.eject
+          (requestInterceptor);
+          axios.interceptors.response.eject
+          (responseInterceptor);
         };
       }, [requestInterceptor, responseInterceptor]);
   

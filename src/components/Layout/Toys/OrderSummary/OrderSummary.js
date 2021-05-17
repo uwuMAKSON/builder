@@ -10,7 +10,8 @@ const OrderSummary = ({ toys, price }) => {
     girrafe: "girrafe",
   }
   const results = Object.keys(toys)
-    .map(type => <li key={type}>{labels[type]}: {toys[type]}</li>);
+    .map(type => <li key={type}>{labels[type]}: 
+    {toys[type]}</li>);
 
   return (
     <div className={classes.OrderSummary}>
@@ -18,7 +19,7 @@ const OrderSummary = ({ toys, price }) => {
       <ul>
         {results}
       </ul>
-      <strong>Total price: {price.toFixed(1)} som</strong>
+      <strong>Total price: {price.toFixed(1)}som</strong>
     </div>
   );
 }

@@ -3,12 +3,13 @@
     z-index: 6;
     background-color: white;
     box-shadow: 0 0 10px blue;
-    width: 60%;
-    left: 20%;
-    top: 25%;
+    width: 50%;
+    left: 22%;
+    top: 20%; 
     border-radius: 2rem;
     padding: 1rem 2rem;
     transition: transform .5s ease-out;
     color: blue;
     text-transform: capitalize;
+
   }

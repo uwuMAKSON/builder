@@ -11,6 +11,7 @@ const names = {
   bear:"Bear",
   bunny:"Bunny",
   girrafe:"Girrafe",
+  
 }
   return (
   <div className={classes.ToysControl}>
