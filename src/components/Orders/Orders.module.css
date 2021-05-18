@@ -1,0 +1,6 @@
+.Orders{
+display: flex;
+justify-content: center;
+font-size: 1.5rem;
+line-height: 45px;
+}
