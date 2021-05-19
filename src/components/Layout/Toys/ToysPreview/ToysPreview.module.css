@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+margin: 0 10px;
 }
 .name{
   display: flex;
@@ -44,5 +44,6 @@ a:focus {
     box-shadow: 0 0 10px blue;
     border-radius: 2rem  ;
     padding: 20px;
+   
   }
 }
