@@ -2,12 +2,12 @@ import classes from "./Toys.module.css";
 import React from "react";
 
 
-import robotBackground from "../../../../images/robot.svg";
-import beanbagBackground from "../../../../images/beanbag.svg";
-import ballBackground from "../../../../images/ball.svg";
-import bearBackground from "../../../../images/bear.svg";
-import bunnyBackground from "../../../../images/bunny.svg";
-import girrafeBackground from "../../../../images/girrafe.svg";
+import robotBackground from "../../../images/robot.svg";
+import beanbagBackground from "../../../images/beanbag.svg";
+import ballBackground from "../../../images/ball.svg";
+import bearBackground from "../../../images/bear.svg";
+import bunnyBackground from "../../../images/bunny.svg";
+import girrafeBackground from "../../../images/girrafe.svg";
 
 const Toys = ({ type ,fixed }) => {
   const types = {

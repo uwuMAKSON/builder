@@ -1,5 +1,5 @@
 import { useDispatch} from "react-redux";
-import Button from "../../../../UI/Backdrop/Button/Button";
+import Button from "../../../UI/Backdrop/Button/Button";
 import classes from "./ToysControl.module.css";
 
 const ToysControl = ({ type, count }) => {

@@ -1,4 +1,4 @@
-import ToysPreview from "../Layout/Toys/ToysPreview/ToysPreview";
+import ToysPreview from "../Toys/ToysPreview/ToysPreview";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
 import axios from "../../axios";

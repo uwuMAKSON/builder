@@ -2,13 +2,13 @@ import ToysPreview from "./ToysPreview/ToysPreview";
 import ToysControls from "./ToysControls/ToysControls";
 import classes from "./ToysBuilder.module.css";
 import { useEffect, useState } from "react";
-import Modal from "../../UI/Backdrop/Modal/Modal";
+import Modal from "../UI/Backdrop/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
-import Button from "../../UI/Backdrop/Button/Button";
+import Button from "../UI/Backdrop/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
-import { load } from "../../../store/actions/builder";
-import withAxios from "../../withAxios";
-import axios from "../../../axios";
+import { load } from "../../store/actions/builder";
+import withAxios from "../withAxios";
+import axios from "../../axios";
 
 
 const ToysBuilder = ({ history }) => {

@@ -1,5 +1,5 @@
 import Layout from "./components/Layout/Layout" ;
-import ToysBuilder from "./components/Layout/Toys/ToysBuilder" ;
+import ToysBuilder from "./components/Toys/ToysBuilder" ;
 import Checkout from "./components/Checkout/Checkout"
 import "./App.css" ;
 import { Redirect, Route, Switch } from "react-router";

@@ -1,4 +1,4 @@
-import Button from "../../../UI/Backdrop/Button/Button";
+import Button from "../../UI/Backdrop/Button/Button";
 import ToysControl from "./ToysControl/ToysControl";
 import classes from "./ToysControls.module.css";
 
