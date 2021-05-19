@@ -14,3 +14,14 @@ text-shadow: 0 0 5px rgb(0, 217, 255);
 box-shadow: 0 0 10px blue;
 
 }
+@media (max-width:600px){
+  .ToysControls{
+    width: 250px;
+    min-height: 250px;
+    background-color: white;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px blue;
+    border-radius: 2rem  ;
+    padding: 20px;
+  }
+}

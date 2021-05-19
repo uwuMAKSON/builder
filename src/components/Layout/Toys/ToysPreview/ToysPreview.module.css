@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-margin: 0 10px;
+margin: 0 20px;
 }
 .name{
   display: flex;
@@ -35,15 +35,27 @@ margin: 0 10px;
 a:focus {
   outline: none;
 }
-@media (max-width:630px){
+@media (max-width:600px){
   .color{
-    width: 400px;
-    min-height: 400px;
+    width: 280px;
+    min-height: 280px;
     background-color: white;
     margin-bottom: 1rem;
     box-shadow: 0 0 10px blue;
     border-radius: 2rem  ;
     padding: 20px;
    
+  }
+  .price {
+    box-shadow: 0 0 10px blue;
+   background-color: white;
+    border-radius: 2.5rem;
+    padding: 0 2rem;
+    cursor: pointer;
+    color: blue;
+    text-shadow: 0 0 5px rgb(0, 217, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
   }
 }
