@@ -15,7 +15,7 @@ box-shadow: 0 0 10px blue;
 
 }
 Button {
-  font-family: cursive;
+  font-family: 'Cardo';
 }
 @media (max-width:600px){
   .ToysControls{
