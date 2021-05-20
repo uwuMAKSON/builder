@@ -15,7 +15,6 @@ const OrderSummary = ({ toys, price }) => {
 
   return (
     <div className={classes.OrderSummary}>
-      <h3>TOYS SHOP</h3>
       <ul>
         {results}
       </ul>

@@ -15,11 +15,11 @@ const names = {
 }
   return (
   <div className={classes.ToysControl}>
- <Button onClick={() =>
-   dispatch({type: "ADD_TOY", toy:type })}>+</Button>
- <div className={classes.toy}>{names[type]}</div>
   <Button onClick={() =>
     dispatch({type: "REMOVE_TOY", toy:type })} disabled={!count}>-</Button>
+ <div className={classes.toy}>{names[type]}</div>
+ <Button onClick={() =>
+   dispatch({type: "ADD_TOY", toy:type })}>+</Button>
     </div>
   );
 }
