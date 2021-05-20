@@ -14,6 +14,9 @@ text-shadow: 0 0 5px rgb(0, 217, 255);
 box-shadow: 0 0 10px blue;
 
 }
+Button {
+  font-family: cursive;
+}
 @media (max-width:600px){
   .ToysControls{
     width: 250px;

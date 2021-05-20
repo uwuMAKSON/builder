@@ -13,3 +13,27 @@
     text-transform: capitalize;
 
   }
+  @media (max-width:600px){
+    .content {
+      position: fixed;
+      z-index: 6;
+      background-color: white;
+      box-shadow: 0 0 10px blue;
+      width: 45%;
+      left: 21%;
+      top: 20%; 
+      border-radius: 2rem;
+      padding: 1rem 2rem;
+      transition: transform .5s ease-out;
+      color: blue;
+      text-transform: capitalize;
+
+  
+    }
+  }
+  @media (max-width:600px){
+    .Modal Button {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+    }
