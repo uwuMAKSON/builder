@@ -11,7 +11,6 @@
     transition: transform .5s ease-out;
     color: blue;
     text-transform: capitalize;
-
   }
   @media (max-width:600px){
     .content {
