@@ -18,7 +18,7 @@ const OrderSummary = ({ toys, price }) => {
       <ul>
         {results}
       </ul>
-      <strong>Total price: {price.toFixed(1)}som</strong>
+      <strong>PRICE: {price.toFixed(1)}som</strong>
     </div>
   );
 }
