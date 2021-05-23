@@ -1,4 +1,9 @@
-  .Checkout {
-  width: 420px;
-  margin: 0 auto;
+.Checkout {
+  flex: 0 0 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+margin: 0 20px;
+
+
 }
