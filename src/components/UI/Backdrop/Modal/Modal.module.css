@@ -20,6 +20,7 @@
       background-color: white;
       box-shadow: 0 0 10px blue;
       width: 45%;
+      height: 53.5%;
       left: 21%;
       top: 20%; 
       border-radius: 2rem;
@@ -34,6 +35,6 @@
   @media (max-width:600px){
     .Modal Button {
       margin-bottom: 10px;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
     }
