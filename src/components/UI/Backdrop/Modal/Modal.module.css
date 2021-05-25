@@ -13,7 +13,7 @@
     color: blue;
     text-transform: capitalize;
   }
-  @media (max-width:600px){
+  @media (max-width:680px){
     .content {
       position: fixed;
       z-index: 6;
@@ -32,7 +32,7 @@
   
     }
   }
-  @media (max-width:600px){
+  @media (max-width:680px){
     .Modal Button {
       margin-bottom: 10px;
       font-size: 1.2rem;
