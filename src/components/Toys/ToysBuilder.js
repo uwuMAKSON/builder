@@ -10,8 +10,8 @@ import { load } from "../../store/actions/builder";
 import withAxios from "../withAxios";
 import axios from "../../axios";
 
-
 const ToysBuilder = ({ history }) => {
+  const isAuthenticated = useSelector(state => state.auth.token !== null);
   const dispatch = useDispatch();
   const toys = useSelector(state => state.builder.toys);
   const price = useSelector(state => state.builder.price);
@@ -20,6 +20,11 @@ const ToysBuilder = ({ history }) => {
   useEffect(() => dispatch(load()), [dispatch]);
 
   function startOrdering() {
+    if (isAuthenticated) {
+    }
+    else{
+      history.push("./auth")
+    }
     setOrdering(true);
   }
 

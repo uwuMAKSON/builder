@@ -17,7 +17,7 @@ const App =() =>{
   useEffect(() => {
     disptach(restore());
   }, [disptach]);
-
+  
   let output = (
         <Switch>
     <Route path="/"component={ToysBuilder}exact/>
@@ -37,7 +37,6 @@ const App =() =>{
       </Switch>
     );
   }
-
   return (
     <div className="App">
    <Layout>
