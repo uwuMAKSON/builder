@@ -21,7 +21,7 @@
     border-radius: 1rem;
     
   }
-  @media (max-width: 680px) {
+  @media (max-width: 700px) {
     .NavItem a {
       border-bottom: none;
       border-right: 10px solid transparent;
@@ -34,7 +34,7 @@
  
   }
   
-  @media (max-width: 680px) {
+  @media (max-width:700px) {
    
     .NavItem a:hover {
       box-shadow: 0 0 5px rgba(0, 0, 255, 0.575);

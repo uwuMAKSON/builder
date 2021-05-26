@@ -17,7 +17,7 @@ box-shadow: 0 0 10px blue;
 Button {
   font-family: 'Lora', serif;
 }
-@media (max-width:680px){
+@media (max-width:700px){
   .ToysControls{
     width: 250px;
     min-height: 250px;
