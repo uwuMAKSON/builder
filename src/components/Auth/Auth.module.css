@@ -1,5 +1,5 @@
 .Auth {
-    color: rgb(207, 94, 132);
+    color: blue;
     display: flex;
     text-align: center;
     align-items: center;
@@ -12,12 +12,16 @@
   height: 2.5rem;
   margin-bottom: 1rem;
   border-radius: 3rem;
-  border: 2px solid rgb(207, 94, 132);
-  font-size: 1.3rem;
+  border: 2px solid rgb(255, 0, 0);
+  font-size: 1rem;
   outline: none;
 }
-.Auth input::placeholder{
-  padding: 5px;
-  font-size: 1.5rem;
-  color: grey;
+.Auth button{
+  width: 5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border-radius: 3rem;
+  border: 2px solid rgb(255, 0, 0);
+  font-size: 1rem;
+  outline: none;
 }

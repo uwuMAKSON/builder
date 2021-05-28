@@ -30,7 +30,7 @@ const Auth = () => {
   }
 
   return (
-    <div>
+    <div className={classes.Auth}>
       <h1>Welcome</h1>
       {errorOutput}
       <form onSubmit={submitCallback}>
