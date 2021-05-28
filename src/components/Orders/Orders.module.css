@@ -9,4 +9,20 @@ max-width: 700px;
 border-radius: 1rem;
 box-shadow: blue 0 0 10px ;
 background-color: white;
+padding-right: 40px;
 }
+@media (max-width:700px){
+    .Orders{
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        line-height: 30px;
+        flex-wrap: wrap;
+        border: blue 1px solid;
+        max-width: 400px;
+        border-radius: 1rem;
+        box-shadow: blue 0 0 10px ;
+        background-color: white;
+    
+        }
+    }
